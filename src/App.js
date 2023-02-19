@@ -3,7 +3,7 @@ import './App.css';
 import { useColorMode } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
 import { Button } from "@chakra-ui/react";
-import { Text } from "@chakra-ui/react";
+import { Text, Link } from "@chakra-ui/react";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -18,14 +18,18 @@ function App() {
         <Text fontSize="2xl">
           ChakCRA
         </Text>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+        <Link href="https://github.com/carvalhochris/chakCRA" isExternal>
+        <Button
+          // className="App-link"
+          
           target="_blank"
           rel="noopener noreferrer"
+          colorScheme="blue"
+          mt={7}
         >
           Fork me on Github
-        </a>
+        </Button>
+        </Link>
       </header>
     </div>
   );
