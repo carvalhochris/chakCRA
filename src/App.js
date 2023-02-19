@@ -15,7 +15,7 @@ function App() {
         {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </Button>
         <img src={logo} className="App-logo" alt="logo" />
-        <Text fontSize="2xl">
+        <Text fontSize="2xl" mt={7}>
           ChakCRA
         </Text>
         <Link href="https://github.com/carvalhochris/chakCRA" isExternal>
